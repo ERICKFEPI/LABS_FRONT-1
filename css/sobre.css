@@ -3,7 +3,7 @@
    --cor-base: #333;
    --cor-fundo-img:#f2eded;
    --cor-borda-img: #ccc;
-  
+   --cor-titulo-especial:#8a8686cc;
 }
 body {
    color: var(--cor-base);
@@ -45,4 +45,9 @@ p{
    text-indent: 15px;
    text-align: justify;
 
+}
+
+#diferenciais{
+   text-align: center;
+   color:var(--cor-titulo-especial);
 }

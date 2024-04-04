@@ -12,18 +12,31 @@
     padding-top: 8px;
     text-align: right;
     width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
 
 
 }
 
+.menu-opcoes{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .menu-opcoes ul {
     font-size: 15px;
+   
 }
 
 
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
+    
    
 }
 
@@ -42,4 +55,9 @@ body {
     margin: 0 auto;
     width: 90%;
 
+}
+
+
+header {
+    position: relative;
 }

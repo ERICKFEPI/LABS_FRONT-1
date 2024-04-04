@@ -48,6 +48,7 @@ p{
 #diferenciais{
    text-align: center;
    color:var(--cor-titulo-especial);
+   padding-top: 60px;
 }
 
 #centro-distribuicao{
@@ -75,6 +76,6 @@ p{
 
 .container {
    margin: 0 auto;
-   width: 90%;
+   width: 85%;
 
 }

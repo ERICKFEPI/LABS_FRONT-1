@@ -2,6 +2,8 @@
 
     --cor-base: #333;
     --cor-menu: #003366;
+    --cor-menu-lateral: #dcdcdc;
+    --cor-menu-lateral-itens: #ffff;
 }
 
 .sacola {
@@ -20,7 +22,7 @@
 
 }
 
-.menu-opcoes{
+.menu-opcoes {
 
     position: absolute;
     bottom: 0;
@@ -29,15 +31,15 @@
 
 .menu-opcoes ul {
     font-size: 15px;
-   
+
 }
 
 
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
-    
-   
+
+
 }
 
 
@@ -60,4 +62,58 @@ body {
 
 header {
     position: relative;
+}
+
+.busca,
+.menu-departamentos {
+    background-color: var(--cor-menu-lateral);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+
+}
+
+
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+
+}
+
+.menu-departamentos li {
+    background-color: var(--cor-menu-lateral-itens);
+    margin-bottom: 1px;
+    padding: 5px 10px;
+
+}
+
+.menu-departamentos a {
+    color: var(--cor-base);
+    text-decoration: none;
+
+}
+
+.busca input {
+    vertical-align: middle;
+
+}
+
+.busca input [type=search]{
+    width: 170px;
+
+}
+    
+
+
+.menu-departamentos {
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
+}
+
+.destaque {
+    margin-top: 10px;
 }

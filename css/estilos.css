@@ -6,6 +6,13 @@
     --cor-menu-lateral-itens: #ffff;
     --cor-painel-novidades: #f5dcdc;
     --cor-painel-mais-vendidos: #dcdcf5;
+    --cor-menu-lateral-hover: #007dc6;
+    --cor-menu-lateral-itens-active: #f00;
+    --cor-painel-novidades-grad: #bebef4;
+    --cor-painel-mais-vendiddos-grad: #f4bebe;
+    --cor-painel-shadow: #999;
+    --cor-painel-titulo:  rgba(0, 0, 0, 0.5);
+
 
 }
 
@@ -142,6 +149,8 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px var(--cor-painel-titulo);
+   
 
 }
 
@@ -155,12 +164,15 @@ header {
 }
 
 .novidades {
-    background-color: var(--cor-painel-novidades);
+    
+    background: linear-gradient(var(--cor-painel-mais-vendidos),var(--cor-painel-novidades-grad));
+    
 
 }
 
 .mais-vendidos {
-    background-color: var(--cor-painel-mais-vendidos);
+    
+    background: linear-gradient(var(--cor-painel-mais-vendidos),var(--cor-painel-mais-vendiddos-grad));
 
 }
 
@@ -221,11 +233,11 @@ footer {
 }
 
 .menu-opcoes a:hover {
-    color: #007dc6;
+    color: var(--cor-menu-lateral-hover);
 }
 
 .menu-opcoes a:active {
-    color: red;
+    color: var(--cor-menu-lateral-itens-active);
 }
 
 .menu-departamentos li ul {
@@ -237,11 +249,17 @@ footer {
 }
 
 .menu-departamentos ul ul li {
-    background-color: #dcdcdc;
+    background-color:var(--cor-menu-lateral);
 }
 
 .menu-departamentos li li a::before{
-    content: '-';
+    content: '- ';
+}
+
+.painel {
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 4px var(--cor-painel-shadow);
+
 }
 
 
